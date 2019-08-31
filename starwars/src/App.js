@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import StarWarsCharacter from "./components/StarWarsCharacter";
 // import styled from "styled-components";
 
 
@@ -12,8 +13,8 @@ const App = () => {
             .then(res => {
                 // console.log(res.data.results);
                 const characters = res.data.results;
-                console.log(characters);
-                setStarWarsImages()
+                // console.log(characters);
+                setStarWarsImages(characters)
             })
             .catch(err => console.log(err));
     }, []);
