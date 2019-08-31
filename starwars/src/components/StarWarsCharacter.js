@@ -3,11 +3,13 @@ import './StarWars.css';
 import styled from "styled-components";
 
 const Person = styled.div`
-    width: 40%;
+    width: 30%;
     margin: 50px auto 50px auto;
-    background-color: white;
+    background-color: #4B4346;
+    color: white;
     border-radius: 20px;
     padding: 5px 0px 5px 0px;
+    box-shadow: 0px 15px 5px -3px rgba(89,197,237,1);
 `;
 const Seperate = styled.div`
     display: flex;
