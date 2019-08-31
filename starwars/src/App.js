@@ -1,11 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
-import styled from "styled-components";
+// import styled from "styled-components";
 
 
 const App = () => {
     const [starWarsImages, setStarWarsImages] = useState([]);
+
+    useEffect(() => {
+        axios.get('https://swapi.co/api/people')
+            .then(res => {
+                // console.log(res.data.results);
+                const characters = res.data.results;
+                console.log(characters);
+                setStarWarsImages()
+            })
+            .catch(err => console.log(err));
+    }, []);
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
