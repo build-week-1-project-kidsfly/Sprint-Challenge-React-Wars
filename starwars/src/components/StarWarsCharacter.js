@@ -10,6 +10,11 @@ const Person = styled.div`
     border-radius: 20px;
     padding: 5px 0px 5px 0px;
     box-shadow: 0px 15px 5px -3px rgba(89,197,237,1);
+    &:hover {
+        background-color: white;
+        color: #59c5ed;
+        box-shadow: 0px 15px 5px -3px rgba(75,67,70,1);
+    }
 `;
 const Seperate = styled.div`
     display: flex;
