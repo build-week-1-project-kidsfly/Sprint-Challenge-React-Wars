@@ -2,6 +2,7 @@ import React from 'react';
 import StarWarsCharacter from "./StarWarsCharacter";
 import './StarWars.css';
 
+/* List of all the characters available in the api */
 const ListOfCharacters = (props) => {
     const { individual } = props;
     return (

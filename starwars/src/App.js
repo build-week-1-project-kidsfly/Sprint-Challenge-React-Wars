@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import ListOfCharacters from "./components/ListOfCharacters";
-// import styled from "styled-components";
 
 
 const App = () => {
@@ -11,9 +10,7 @@ const App = () => {
     useEffect(() => {
         axios.get('https://swapi.co/api/people')
             .then(res => {
-                // console.log(res.data.results);
                 const characters = res.data.results;
-                // console.log(characters);
                 setStarWarsImages(characters)
             })
             .catch(err => console.log(err));
